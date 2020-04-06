@@ -50,5 +50,10 @@
   "dependencies": {
     "gunzip-maybe": "^1.4.1",
     "tar-stream": "^2.1.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged && lerna run precommit"
+    }
   }
 }
