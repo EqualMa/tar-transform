@@ -1,1 +1,9 @@
-module.exports = require("@gitpkg/common/jest")();
+module.exports = {
+  preset: "ts-jest",
+  testEnvironment: "node",
+  globals: {
+    "ts-jest": {
+      babelConfig: true,
+    },
+  },
+};

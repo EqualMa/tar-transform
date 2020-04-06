@@ -1,4 +1,4 @@
 {
-  "extends": "@gitpkg/common/tsconfig",
-  "include": ["src/**/*.ts", "test/**/*.ts"]
+  "extends": "./tsconfig.base.json",
+  "include": ["src/**/*.ts", "test/**/*.ts", "*.js"]
 }
