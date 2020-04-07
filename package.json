@@ -1,7 +1,6 @@
 {
   "name": "tar-transform",
-  "version": "1.0.0-alpha.1",
-  "description": "a transform stream lib for processing tarball",
+  "description": "extract, transform and re-pack tarball entries in form of stream",
   "license": "MIT",
   "main": "dist/index.js",
   "keywords": [
@@ -19,8 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/EqualMa/gitpkg.git",
-    "directory": "packages/tar-transform"
+    "url": "https://github.com/EqualMa/tar-transform.git"
   },
   "scripts": {
     "test": "jest",
