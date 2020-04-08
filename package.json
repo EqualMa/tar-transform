@@ -71,5 +71,6 @@
     "hooks": {
       "pre-commit": "lint-staged && lerna run precommit"
     }
-  }
+  },
+  "version": "1.0.0-beta.1"
 }
