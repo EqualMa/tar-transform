@@ -2,7 +2,9 @@
   "name": "tar-transform",
   "description": "extract, transform and re-pack tarball entries in form of stream",
   "license": "MIT",
-  "main": "dist/index.js",
+  "main": "dist/cjs/index.js",
+  "module": "dist/es/index.js",
+  "types": "dist/cjs/index.d.ts",
   "keywords": [
     "tar",
     "tarball",
@@ -26,7 +28,9 @@
     "lint:fix": "eslint --cache --max-warnings 0 --fix",
     "ensure-linted": "eslint --max-warnings 0 . --ext=js,ts",
     "semantic-release": "semantic-release",
-    "build": "yarn run clean && rollup -c",
+    "build": "yarn run clean && yarn run build:lib && yarn run build:types",
+    "build:lib": "rollup -c",
+    "build:types": "tsc -p tsconfig.dts.json --outDir dist/cjs --declaration --emitDeclarationOnly",
     "clean": "rimraf dist"
   },
   "devDependencies": {
