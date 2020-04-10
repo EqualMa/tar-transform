@@ -36,6 +36,8 @@ export default {
     // https://github.com/rollup/plugins/tree/master/packages/typescript
     typescript({
       tsconfig: "tsconfig.prod.json",
+      sourceMap: true,
+      inlineSources: true,
     }),
     // https://github.com/rollup/rollup-plugin-babel
     babel(),
