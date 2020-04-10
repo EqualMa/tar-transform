@@ -19,9 +19,10 @@ module.exports = {
 
   overrides: [
     {
-      files: ["./*.js"],
+      files: ["./*.js", "./scripts/**/*.js"],
       env: {
         node: true,
+        es2020: true,
       },
     },
   ],

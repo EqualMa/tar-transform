@@ -1,6 +1,9 @@
 import externals from "rollup-plugin-node-externals";
 import typescript from "@rollup/plugin-typescript";
 import babel from "rollup-plugin-babel";
+import generatePackageJson from "rollup-plugin-generate-package-json";
+import { getPkgJsonBaseContents } from "./scripts/gen-pkg";
+
 import glob from "glob";
 import path from "path";
 
@@ -21,7 +24,7 @@ const entryFiles = Object.assign(
 export default {
   input: entryFiles,
   output: [
-    { dir: "dist/cjs", format: "cjs", sourcemap: true },
+    { dir: "dist", format: "cjs", sourcemap: true },
     { dir: "dist/es", format: "es", sourcemap: true },
   ],
   plugins: [
@@ -41,5 +44,10 @@ export default {
     }),
     // https://github.com/rollup/rollup-plugin-babel
     babel(),
+    // https://github.com/vladshcherbin/rollup-plugin-generate-package-json
+    generatePackageJson({
+      baseContents: getPkgJsonBaseContents,
+      outputFolder: "dist",
+    }),
   ],
 };
