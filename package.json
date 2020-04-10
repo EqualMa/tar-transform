@@ -61,6 +61,7 @@
     "typescript": "^3.7.5"
   },
   "dependencies": {
+    "core-js": "^3.6.5",
     "gunzip-maybe": "^1.4.1",
     "tar-stream": "^2.1.0"
   },

@@ -4,9 +4,13 @@ module.exports = {
       "@babel/env",
       {
         targets: {
-          node: "6",
+          node: "8",
         },
-        // useBuiltIns: "usage", // TODO chore: core-js@3
+        useBuiltIns: "usage",
+        corejs: {
+          version: 3,
+          // proposals: true,
+        },
       },
     ],
   ],
