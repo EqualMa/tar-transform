@@ -22,6 +22,7 @@
     "type": "git",
     "url": "https://github.com/EqualMa/tar-transform.git"
   },
+  "runkitExampleFilename": "runkit.js",
   "scripts": {
     "test": "jest",
     "precommit": "lint-staged",
