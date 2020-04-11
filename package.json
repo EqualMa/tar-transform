@@ -73,7 +73,7 @@
   ],
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged && lerna run precommit"
+      "pre-commit": "lint-staged"
     }
   },
   "version": "1.0.0-beta.1"
