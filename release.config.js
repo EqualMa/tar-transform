@@ -4,6 +4,13 @@ module.exports = {
     "@semantic-release/release-notes-generator",
     "@semantic-release/changelog",
     ["@semantic-release/npm", { pkgRoot: "dist" }],
+    [
+      "@semantic-release/exec",
+      {
+        prepareCmd: "node scripts/prepublish.js",
+        publishCmd: "node scripts/postpublish.js",
+      },
+    ],
     "@semantic-release/git",
     "@semantic-release/github",
   ],
