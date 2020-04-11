@@ -1,3 +1,10 @@
+# [1.0.0-beta.4](https://github.com/EqualMa/tar-transform/compare/v1.0.0-beta.3...v1.0.0-beta.4) (2020-04-11)
+
+
+### Bug Fixes
+
+* release: updated version not synced to git ([8bb9de6](https://github.com/EqualMa/tar-transform/commit/8bb9de6420354fed422f4d24e11e0f7632b1b48f))
+
 # [1.0.0-beta.3](https://github.com/EqualMa/tar-transform/compare/v1.0.0-beta.2...v1.0.0-beta.3) (2020-04-11)
 
 
