@@ -47,6 +47,10 @@ export default {
     // https://github.com/vladshcherbin/rollup-plugin-generate-package-json
     generatePackageJson({
       baseContents: getPkgJsonBaseContents,
+      additionalDependencies: [
+        // types support for tar entry headers
+        "@types/tar-stream",
+      ],
       outputFolder: "dist",
     }),
   ],
