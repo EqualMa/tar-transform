@@ -1,3 +1,10 @@
+# [1.0.0-beta.2](https://github.com/EqualMa/tar-transform/compare/v1.0.0-beta.1...v1.0.0-beta.2) (2020-04-11)
+
+
+### Bug Fixes
+
+* @types/tar-stream should be included in dependencies ([fd811ac](https://github.com/EqualMa/tar-transform/commit/fd811acd2ea1a94ffb969a3662368911e2b940ee))
+
 # 1.0.0-beta.1 (2020-04-08)
 
 
