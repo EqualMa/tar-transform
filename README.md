@@ -6,6 +6,13 @@
 
 a Node.js library to extract, transform and re-pack tarball entries in form of stream
 
+## Install
+
+```shell
+npm install tar-transform
+yarn add tar-transform
+```
+
 ## Usage
 
 ### :telescope: extract (gzipped) tarball as a stream of tar entries
