@@ -67,11 +67,11 @@ const imageResp = await fetch("https://github.com/EqualMa.png");
 const imageSize = parseInt(imageResp.headers.get("Content-Length"));
 
 Readable.from([
-  { headers: { name: "README.md" }, content: "# tar-transform" },
+  { headers: { name: "./README.md" }, content: "# tar-transform" },
   { headers: { name: "hello/world.txt" }, content: "Hello World!" },
   { headers: { name: "emptyDir", type: "directory" } },
   {
-    headers: { name: "author-avatar.png" },
+    headers: { name: "./author-avatar.png" },
     stream: imageResp.body,
   },
 ])
